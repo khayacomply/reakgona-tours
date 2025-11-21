@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Reakgona Tours — Book</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-logo">
+    <img src="images/logo.png" alt="loading">
+    <p>Reakgona Tours</p>
+  </div>
+</div>
+
+<!-- CHAT POPUP -->
+<div id="chat-popup">
+  <div class="chat-header">Chat with Reakgona Tours</div>
+  <div class="chat-body">
+    <button class="chat-opt" data-msg="I want to book a transfer">🚐 Book a Transfer</button>
+    <button class="chat-opt" data-msg="I want a tour package">🌍 Tour Package Info</button>
+    <button class="chat-opt" data-msg="Send me a quote">💬 Request a Quote</button>
+  </div>
+</div>
+
+<header class="glass-nav">
+  <div class="container header-inner">
+    <div class="brand"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="experiences.html">Gallery</a>
+      <a class="btn-primary" href="book.html">Book Now</a>
+    </nav>
+    <button class="menu-btn">☰</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('images/hero1.jpg')">
+    <div class="container hero-content">
+      <span class="tag">Book a Trip</span>
+      <h1>Send a booking request — we reply fast</h1>
+      <p class="lead">Complete the form or message us directly for quick assistance.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="booking-wrap">
+
+      <!-- BOOKING FORM -->
+      <form id="bookingForm" class="booking-card">
+        <h3>Booking Form</h3>
+
+        <input name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input name="phone" placeholder="Phone Number" required>
+        <input name="pickup" placeholder="Pickup Location" required>
+        <input name="dropoff" placeholder="Drop-off Location" required>
+
+        <select name="service">
+          <option>Airport Transfer</option>
+          <option>Door-to-Door</option>
+          <option>Custom Tour</option>
+          <option>Road Trip</option>
+        </select>
+
+        <div style="display:flex;gap:10px;margin-top:10px">
+          <input type="date" name="date" style="flex:1">
+          <input type="time" name="time" style="flex:1">
+        </div>
+
+        <input type="number" name="passengers" min="1" value="1" style="margin-top:10px">
+        <textarea name="notes" rows="4" placeholder="Notes" style="margin-top:10px"></textarea>
+
+        <button type="submit" class="btn-primary" style="margin-top:12px">Send Booking</button>
+      </form>
+
+      <!-- CONTACT CARD -->
+      <aside class="contact-card">
+        <h3>Contact</h3>
+        <p>Ramokgoro — <strong>079 098 8801</strong></p>
+        <p>Ramonbela — <strong>073 952 8645</strong></p>
+        <p><a href="mailto:ramokgoro.maubane@gmail.com">ramokgoro.maubane@gmail.com</a></p>
+
+        <!-- REAL IMAGE SOCIAL ICONS -->
+        <div class="contact-social-grid" style="margin-top:20px">
+
+          <a href="#" class="contact-icon">
+            <img src="images/whatapp.jpg" alt="WhatsApp">
+            <span>WhatsApp</span>
+          </a>
+
+          <a href="#" class="contact-icon">
+            <img src="images/instagram.jpg" alt="Instagram">
+            <span>Instagram</span>
+          </a>
+
+          <a href="#" class="contact-icon">
+            <img src="images/twitterx.png" alt="Twitter / X">
+            <span>Twitter/X</span>
+          </a>
+
+          <a href="#" class="contact-icon">
+            <img src="images/facebook.jpg" alt="Facebook">
+            <span>Facebook</span>
+          </a>
+
+          <a href="#" class="contact-icon">
+            <img src="images/threads.avif" alt="Threads">
+            <span>Threads</span>
+          </a>
+
+          <a href="#" class="contact-icon">
+            <img src="images/tiktok.jpg" alt="TikTok">
+            <span>TikTok</span>
+          </a>
+
+        </div>
+
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- GOOGLE MAP -->
+  <section class="container" style="margin-bottom:40px">
+    <h3 style="margin-bottom:10px">Our Service Area</h3>
+    <iframe
+      width="100%" height="260"
+      style="border:0;border-radius:10px"
+      loading="lazy"
+      allowfullscreen
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25724302.900508955!2d14.5085!3d-30.5595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e87bf0e1c79a1f7%3A0x123!2sSouth%20Africa!5e0!3m2!1sen!2sza!4v0000000000">
+    </iframe>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-grid container">
+    <div>
+      <img src="images/logo.png" alt="">
+      <p style="color:var(--muted);margin-top:10px">Reakgona Tours — Travel With Ease.</p>
+    </div>
+    <div>
+      <h4 style="color:var(--green)">Quick Links</h4>
+      <a href="index.html">Home</a><br>
+      <a href="services.html">Services</a>
+    </div>
+    <div>
+      <h4 style="color:var(--green)">Contact</h4>
+      <div>Ramokgoro – 079 098 8801</div>
+      <div>Ramonbela – 073 952 8645</div>
+    </div>
+    <div>
+      <h4 style="color:var(--green)">Social</h4>
+      <a href="#">Facebook</a> • <a href="#">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 Reakgona Tours. All Rights Reserved.</div>
+</footer>
+
+<!-- FLOATING CHAT BUTTON -->
+<a class="chat-btn" onclick="openChatPopup()" aria-label="Chat">
+  <img src="images/chat.png" style="width:32px;height:32px;">
+</a>
+
+</body>
+</html>
