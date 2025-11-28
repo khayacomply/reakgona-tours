@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Reakgona Tours — Gallery</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Library for fade-in animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body { background-color: #000; color: #00FF00; }
+    a { text-decoration: none; }
+
+    .card-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00FF00;
+    }
+
+    .card-title {
+      color: #00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header class="container py-3">
+  <h1>Gallery</h1>
+  <p>Click a location to explore its pictures</p>
+</header>
+
+<main class="container py-5">
+  <div class="row g-4">
+
+    <!-- Mpumalanga Card -->
+    <div class="col-md-4" data-aos="fade-up">
+      <a href="mpumalanga.html">
+        <div class="card bg-dark text-center card-hover">
+          <img src="images/mpumalanga/cover.jpg" class="card-img-top img-fluid" alt="Mpumalanga" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Mpumalanga</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Durban Card -->
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+      <a href="durban.html">
+        <div class="card bg-dark text-center card-hover">
+          <img src="images/durban/cover.jpg" class="card-img-top img-fluid" alt="Durban" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Durban</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Mozambique Card -->
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+      <a href="mozambique.html">
+        <div class="card bg-dark text-center card-hover">
+          <img src="images/mozambique/cover.jpg" class="card-img-top img-fluid" alt="Mozambique" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Mozambique</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+</body>
+</html>
