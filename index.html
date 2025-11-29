@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Reakgona Tours — Home</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="main.js" defer></script>
+
+  <!-- Custom Styles for Green Text, Hover Glow, and Sliding Reviews -->
+  <style>
+    /* Green text in Top Destinations, Upcoming Tours, Customer Reviews */
+    .section-title,
+    .section-sub,
+    .dest-grid .card h3,
+    .dest-grid .card p,
+    .dest-grid .card strong,
+    .card-grid .review-box strong,
+    .card-grid .review-box p {
+        color: #00FF00 !important;
+    }
+
+    /* Hover glow for destination/tour cards */
+    .dest-grid .card:hover {
+        box-shadow: 0 0 20px #00FF00;
+        transform: translateY(-5px);
+        transition: 0.3s;
+    }
+
+    /* Customer reviews slider */
+    .card-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding-bottom: 10px;
+        scroll-behavior: smooth;
+    }
+
+    .card-grid::-webkit-scrollbar {
+        height: 8px;
+    }
+    .card-grid::-webkit-scrollbar-thumb {
+        background-color: #00FF00;
+        border-radius: 4px;
+    }
+
+    /* Optional: hover effect on review cards */
+    .review-box:hover {
+        box-shadow: 0 0 15px #00FF00;
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-logo">
+    <img src="images/logo.png" alt="loading">
+    <p>Reakgona Tours</p>
+  </div>
+</div>
+
+<header>
+  <div class="container header-inner">
+    <div class="brand"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="experiences.html">Gallery</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="book.html" class="btn-primary">Book Now</a>
+    </nav>
+    <button class="menu-btn" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('images/hero1.jpg')">
+    <div class="container hero-content">
+      <span class="tag">Travel With Ease — South Africa</span>
+      <h1>We Can Take You Further</h1>
+      <p class="lead">Premium airport transfers, door-to-door services and customised tour packages across South Africa.</p>
+      <div class="actions">
+        <a href="book.html" class="btn btn-primary">Book Now</a>
+        <a href="services.html" class="btn btn-outline">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="section container">
+    <div class="section-title">Top Destinations</div>
+    <div class="section-sub">Curated trips and popular packages</div>
+    <div class="dest-grid">
+      <div class="card"><img src="images/zanzibar.jpg" alt=""><div class="body"><h3>Mozambique Escape</h3><p>From Coral Reefs to Coastal Vibes.</p></div></div>
+      <div class="card"><img src="images/kruger.jpg" alt=""><div class="body"><h3>Kruger Safari</h3><p>Big 5 game drives.</p></div></div>
+      <div class="card"><img src="images/cape.jpg" alt=""><div class="body"><h3>Cape Town</h3><p>Table Mountain & Winelands.</p></div></div>
+    </div>
+  </section>
+
+<!-- UPCOMING TOURS -->
+<section class="section container">
+  <div class="section-title">Upcoming Tours</div>
+  <div class="section-sub">Exclusive travel experiences coming up next</div>
+
+  <div class="dest-grid">
+
+    <!-- MPUMALANGA TOUR -->
+    <div class="card">
+      <img src="images/mpumalangaexp.png" alt="Mpumalanga Adventure">
+      <div class="body">
+        <h3>Mpumalanga Adventure</h3>
+        <p>R3700 pp | 3 Days / 2 Nights</p>
+        <p>
+          ✅ Sudwala Caves • Quad Biking • Zip Lining • Spa <br>
+          🚗 Transport from PTA, JHB, Delmas, Witbank <br>
+          👥 Group of 6+ | Choose your date <br>
+          🔒 R750 deposit to secure
+        </p>
+        <a href="book.html" class="btn btn-primary" style="margin-top:10px;display:block;text-align:center;">Book Now</a>
+      </div>
+    </div>
+
+    <!-- DURBAN TOUR -->
+    <div class="card">
+      <img src="images/durbantours.png" alt="Durban Getaway">
+      <div class="body">
+        <h3>Durban Getaway</h3>
+        <p>From R3450 pp</p>
+        <p>
+          🔒 R3450 — 2 Nights: Ushaka Marine, Boat Cruise, City Tour <br>
+          🔒 R4450 — 3 Nights: + Quad Biking, Braai, Extra Day <br>
+          📅 12–14 Dec • Or choose your date <br>
+          👥 Group of 6+ | 🚗 Pickup: Joburg / Pretoria
+        </p>
+        <a href="book.html" class="btn btn-primary" style="margin-top:10px;display:block;text-align:center;">Book Now</a>
+      </div>
+    </div>
+
+    <!-- BELA BELA TOUR -->
+    <div class="card">
+      <img src="images/belabelawa.png" alt="Bela Bela Weekend">
+      <div class="body">
+        <h3>Bela Bela Weekend</h3>
+        <p>R3650 pp | 2 Nights</p>
+        <p>
+          ✅ Forever Resort Entry • Game Drive • Saturday Braai <br>
+          🚗 Transport from PTA, JHB, Delmas <br>
+          👥 Group of 6+ | Flexible dates
+        </p>
+        <a href="book.html" class="btn btn-primary" style="margin-top:10px;display:block;text-align:center;">Book Now</a>
+      </div>
+    </div>
+
+    <!-- WARM BATHS TOUR -->
+    <div class="card">
+      <img src="images/warmbaths.jpeg" alt="Warmbaths Day Visit">
+      <div class="body">
+        <h3>Warmbaths Day Visit</h3>
+        <p>R1200 pp | Day Trip</p>
+        <p>
+          ✅ Entrance • Pre-packed Snack <br>
+          🚗 Transport from JHB, PTA & Delmas <br>
+          👥 Group of 6+ | Choose your date <br>
+          🚤 Optional: Paddle Boating • Quad Bikes • Bumpee Jumping
+        </p>
+        <a href="book.html" class="btn btn-primary" style="margin-top:10px;display:block;text-align:center;">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- REVIEWS -->
+  <section class="section container">
+    <div class="section-title">Customer Reviews</div>
+    <div class="section-sub">Real travellers — real experiences</div>
+    <div class="card-grid">
+      <div class="review-box"><img src="images/rev1.jpg" alt=""><div><strong>Thabo M.</strong><p>Excellent service! Driver was friendly and on time.</p></div></div>
+      <div class="review-box"><img src="images/rev2.jpg" alt=""><div><strong>Lerato P.</strong><p>Custom tour was perfect — comfortable and informative.</p></div></div>
+      <div class="review-box"><img src="images/rev3.jpg" alt=""><div><strong>Johan V.</strong><p>Safe, reliable and professional.</p></div></div>
+    </div>
+  </section>
+</main>
+
+<section class="section container reveal">
+  <div class="cta-panel">
+    <h2>Ready to Travel?</h2>
+    <p>Instant bookings, fast response time — travel with ease.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="book.html">Book Instantly</a>
+      <a class="btn btn-outline" href="book.html">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid container">
+
+    <div>
+      <img src="images/logo.png" alt="">
+      <p style="color:var(--muted);margin-top:10px">Reakgona Tours — Travel With Ease.</p>
+    </div>
+
+    <div>
+      <h4 style="color:var(--green)">Quick Links</h4>
+      <a href="index.html">Home</a><br>
+      <a href="services.html">Services</a><br>
+      <a href="experiences.html">Gallery</a><br>
+      <a href="privacy.html">Privacy Policy</a><br>
+      <a href="book.html">Book</a>
+    </div>
+
+    <div>
+      <h4 style="color:var(--green)">Contact</h4>
+      <div>Ramokgoro – 079 098 8801</div>
+      <div>Mabombela – 073 952 8645</div>
+      <div style="margin-top:8px">
+        <a href="mailto:enquiries@reakgonatours.co.za">enquiries@reakgonatours.co.za</a><br>
+        <a href="mailto:booking@reakgonatours.co.za">booking@reakgonatours.co.za</a>
+      </div>
+    </div>
+
+    <div>
+      <h4 style="color:var(--green)">Social</h4>
+      <div style="display:flex; gap:10px; margin-top:8px;">
+        <a href="https://www.facebook.com/61580650043823" target="_blank">
+          <img src="images/facebook.jpg" style="width:30px;height:30px;" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/reakgonatour001/" target="_blank">
+          <img src="images/instagram.jpg" style="width:30px;height:30px;" alt="Instagram">
+        </a>
+        <a href="https://x.com/ReakgonaTours" target="_blank">
+          <img src="images/twitterx.png" style="width:30px;height:30px;" alt="Twitter / X">
+        </a>
+        <a href="#" target="_blank">
+          <img src="images/tiktok.jpg" style="width:30px;height:30px;" alt="TikTok">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">© 2025 Reakgona Tours. All Rights Reserved.</div>
+</footer>
+
+</body>
+</html>

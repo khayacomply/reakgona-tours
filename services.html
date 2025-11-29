@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Reakgona Tours — Services</title>
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css"/>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS CSS for animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Main JS -->
+  <script src="main.js" defer></script>
+
+  <style>
+    /* BLACK & GREEN THEME */
+    body, main, header, footer, .hero, .section {
+        background-color: #000 !important;
+        color: #00FF00 !important;
+    }
+
+    .card, .service-card, .review-box {
+        background-color: #000 !important;
+        border: 2px solid #00FF00;
+        color: #00FF00 !important;
+    }
+
+    .card h3, .card p, .review-box p, .review-box strong {
+        color: #00FF00 !important;
+    }
+
+    .card .btn-primary {
+        background-color: #00FF00;
+        border-color: #00FF00;
+        color: #000;
+        transition: 0.3s;
+    }
+
+    .card .btn-primary:hover {
+        box-shadow: 0 0 15px #00FF00;
+        color: #000;
+    }
+
+    .card img, .review-box img {
+        border: 2px solid #000;
+        transition: 0.3s;
+    }
+
+    .card img:hover, .review-box img:hover {
+        box-shadow: 0 0 15px #00FF00;
+        transform: scale(1.05);
+    }
+
+    .hero-content span, .hero-content h1, .hero-content p {
+        color: #00FF00 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-logo">
+    <img src="images/logo.png" alt="loading">
+    <p>Reakgona Tours</p>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container header-inner">
+    <div class="brand"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="services.html">Services</a>
+      <a href="experiences.html">Gallery</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="book.html" class="btn-primary">Book Now</a>
+    </nav>
+    <button class="menu-btn">☰</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image:url('images/hero2.jpg')">
+    <div class="container hero-content">
+      <span class="tag">Our Services</span>
+      <h1>Professional Transport & Tours</h1>
+      <p class="lead">Trusted drivers, modern vehicles and tailored packages.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="section container">
+    <div class="section-title">Our Services</div>
+    <div class="section-sub">Click a card for details</div>
+
+    <div class="card-grid">
+
+      <!-- AIRPORT TRANSFERS -->
+      <div class="card service-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/airport.jpg" alt="">
+        <div class="body">
+          <h3>Airport Transfers</h3>
+          <p>Punctual pickups, flight monitoring & VIP meet-and-greet.</p>
+          <a href="https://wa.me/27739528645?text=Hi%20Reakgona%20Tours,%20I'd%20like%20a%20quote%20for%20Airport%20Transfers." 
+             class="btn btn-primary" 
+             style="margin-top:12px;display:block;text-align:center;">
+             QUOTE
+          </a>
+        </div>
+      </div>
+
+      <!-- DOOR TO DOOR -->
+      <div class="card service-card" data-aos="fade-left" data-aos-delay="200">
+        <img src="images/door.jpg" alt="">
+        <div class="body">
+          <h3>Door-to-Door</h3>
+          <p>Private, safe transport to any destination — anytime.</p>
+          <a href="https://wa.me/27739528645?text=Hi%20Reakgona%20Tours,%20I'd%20like%20a%20quote%20for%20Door-to-Door%20Transport." 
+             class="btn btn-primary" 
+             style="margin-top:12px;display:block;text-align:center;">
+             QUOTE
+          </a>
+        </div>
+      </div>
+
+      <!-- CUSTOM TOURS -->
+      <div class="card service-card" data-aos="fade-right" data-aos-delay="300">
+        <img src="images/tours.jpg" alt="">
+        <div class="body">
+          <h3>Custom Tours</h3>
+          <p>Fully personalised itineraries, expert travel planning.</p>
+          <a href="https://wa.me/27739528645?text=Hi%20Reakgona%20Tours,%20I'd%20like%20a%20quote%20for%20Custom%20Tours." 
+             class="btn btn-primary" 
+             style="margin-top:12px;display:block;text-align:center;">
+             QUOTE
+          </a>
+        </div>
+      </div>
+
+      <!-- ROAD TRIPS -->
+      <div class="card service-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="images/road.jpg" alt="">
+        <div class="body">
+          <h3>Road Trips</h3>
+          <p>Comfortable long-distance group travel across South Africa.</p>
+          <a href="https://wa.me/27739528645?text=Hi%20Reakgona%20Tours,%20I'd%20like%20a%20quote%20for%20Road%20Trips." 
+             class="btn btn-primary" 
+             style="margin-top:12px;display:block;text-align:center;">
+             QUOTE
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section container">
+    <div class="section-title">Customer Reviews</div>
+    <div class="card-grid">
+
+      <div class="review-box" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/rev1.jpg" alt="">
+        <div>
+          <strong>Thabo M.</strong>
+          <p style="margin-top:6px;color:#00FF00">On time and professional driver.</p>
+        </div>
+      </div>
+
+      <div class="review-box" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/rev2.jpg" alt="">
+        <div>
+          <strong>Lerato P.</strong>
+          <p style="margin-top:6px;color:#00FF00">Great customised tour, recommended!</p>
+        </div>
+      </div>
+
+      <div class="review-box" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/rev3.jpg" alt="">
+        <div>
+          <strong>Johan V.</strong>
+          <p style="margin-top:6px;color:#00FF00">Excellent and reliable service.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid container">
+    <div>
+      <img src="images/logo.png" alt="">
+      <p style="color:var(--muted);margin-top:10px">Reakgona Tours — Travel With Ease.</p>
+    </div>
+
+    <div>
+      <h4 style="color:var(--green)">Quick Links</h4>
+      <a href="index.html">Home</a><br>
+      <a href="services.html">Services</a><br>
+      <a href="experiences.html">Gallery</a><br>
+      <a href="privacy.html">Privacy Policy</a><br>
+      <a href="book.html">Book</a>
+    </div>
+
+    <div>
+      <h4 style="color:var(--green)">Contact</h4>
+      <div>Ramokgoro – 079 098 8801</div>
+      <div>Mabombela – 073 952 8654</div>
+      <div style="margin-top:8px">
+        <a href="mailto:enquiries@reakgonatours.co.za">enquiries@reakgonatours.co.za</a><br>
+        <a href="mailto:booking@reakgonatours.co.za">booking@reakgonatours.co.za</a>
+      </div>
+    </div>
+
+    <div>
+      <h4 style="color:var(--green)">Social</h4>
+      <div style="display:flex; gap:14px; margin-top:10px;">
+        <a href="https://www.facebook.com/61580650043823" target="_blank"><img src="images/facebook.jpg" style="width:35px;height:35px;" alt="Facebook"></a>
+        <a href="https://www.instagram.com/reakgonatour001/" target="_blank"><img src="images/instagram.jpg" style="width:35px;height:35px;" alt="Instagram"></a>
+        <a href="https://x.com/ReakgonaTours" target="_blank"><img src="images/twitterx.png" style="width:35px;height:35px;" alt="Twitter"></a>
+        <a href="#" target="_blank"><img src="images/tiktok.jpg" style="width:35px;height:35px;" alt="TikTok"></a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">© 2025 Reakgona Tours. All Rights Reserved.</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+
+</body>
+</html>
